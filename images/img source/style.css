@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 230px;
+}
+.img{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+.gallery img{
+    width:300px;
+    height:200px;
+}
+
+.box{
+        width: 20%;
+        float: left;
+        padding: 5px;
+        padding-left: 10px;  
+        display: block;
+        overflow: hidden;
+        border-radius: 3px;
+       
+}
+       
+img{
+        width: 75%;
+        border-radius: 4px;
+       
+}
+       
+img:hover{
+         transform: scale(1.5,1.5);
+         transition: .3s transform;
+         
+}
+
+.box .edit{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color:lightpink;
+    color: black;
+    font-size: 16px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+ .box .edit:hover{
+    background-color:palevioletred;
+    color: black;
+}
+
+.box .view{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color:lightpink;
+    color: black;
+    font-size: 16px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+ .box .view:hover{
+    background-color:palevioletred;
+    color: black;
+}
+.box{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
